@@ -1,9 +1,15 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "Jekyll + Tailwind" # the name of your site, e.g. ACME Corp.
 
 plugins:
+  - jekyll-feed
   - jekyll-postcss
+
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
 
 sass:
   sourcemap: never

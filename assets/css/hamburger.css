@@ -1,0 +1,54 @@
+div.hamburger {
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+div.hamburger.active {
+    background: white;
+}
+
+div.hamburger div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: center;
+    justify-content: center;
+}
+
+div.hamburger div span {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    transition: all 0.3s ease;
+}
+
+div.hamburger div span.line-1 {
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+div.hamburger.active div span.line-1 {
+    opacity: 0;
+    transform: translateY(500%);
+}
+
+div.hamburger div span.line-2 {
+    background-color: black;
+}
+
+div.hamburger.active div span.line-2 {
+    background-color: #3b82f6;
+}
+
+div.hamburger div span.line-3 {
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+div.hamburger.active div span.line-3 {
+    opacity: 0;
+    transform: translateY(-500%);
+}
