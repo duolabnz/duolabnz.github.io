@@ -21,5 +21,7 @@ npm i
 bundle exec jekyll serve -l
 ```
 
-## Template Credit
-[Stef Coetzee](https://github.com/stefcoetzee/jekyll-tailwind)
+## Credit
+Jekyll/TWCSS/GH template from [Stef Coetzee](https://github.com/stefcoetzee/jekyll-tailwind)
+Images from [Pexels](https://www.pexels.com)
+

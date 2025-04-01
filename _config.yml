@@ -30,3 +30,8 @@ exclude:
 keep_files:
   - assets/css/tailwind.css
   - assets/css/tailwind.css.map
+
+# socials
+email: mailto:hello@duolab.nz
+x: https://x.com/duolab
+linkedin: https://linkedin.com/in/duolab

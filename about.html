@@ -2,27 +2,26 @@
 title: DUO - The applied technology company.
 ---
 
-<main class="w-[100%] justify-center content-center">
-    <h1 class="px-[20px] md:px-[30px] py-5 mb-10 max-w-[80%] text-[xxx-large] font-bold text-black w-fit">{{ site.data.texts.about.summary }}</h1>
+<main class="justify-center content-center">
+    <img class="w-screen max-h-[500px]" src="/assets/images/office-bw.jpg" />
 
-    <iframe class="px-[20px] md:px-[30px]" width="560" height="315" src="https://www.youtube.com/embed/QE-Qsk0o3yU"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="mt-14" />
+    <h2 class="mx-[40px] md:mx-[50px] pt-5 text-2xl text-black w-fit max-w-[90%]">
+        {{ site.data.texts.about.summary }}
+    </h2>
 
-    <h2 class="mx-16">TEAM</h2>
-    <p class="mx-16">{{ site.data.texts.team.summary }}</p>
-    <br />
+    <div class="mt-14" />
+    <h2 class="mx-[40px] md:mx-[50px] text-3xl font-bold">TEAM</h2>
 
-    <div class="mx-16 grid sm:grid-cols-1 sm:grid-rows-2 md:grid-cols-2 md:grid-rows-1 gap-3">
+    <div class="mt-4 mx-[40px] md:mx-[50px] grid sm:grid-cols-1 sm:grid-rows-2 md:grid-cols-2 md:grid-rows-1 gap-3">
         <div class="sm:col-start-1 sm:row-start-1 md:col-start-1 md:row-start-1">
-            <h3>JAMES</h3>
-            <p>{{ site.data.texts.team.james }}</p>
+            <h3 class="font-bold">JAMES</h3>
+            <p>{{ site.data.texts.about.team.james }}</p>
         </div>
 
         <div class="sm:col-start-1 sm:row-start-2 md:col-start-2 md:row-start-1">
-            <h3>TOM</h3>
-            <p>{{ site.data.texts.team.tom }}</p>
+            <h3 class="font-bold">TOM</h3>
+            <p>{{ site.data.texts.about.team.tom }}</p>
         </div>
     </div>
 </main>

@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.title }}</title>
 
-    <!-- tailwind -->
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
@@ -24,15 +21,18 @@
 
     <!-- custom css -->
     <link rel="stylesheet" href="/assets/css/main.css" />
+
+    <!-- custom js -->
+    <script src="/assets/js/main.js"></script>
 </head>
 
 <!-- sticky header -->
-<header class="sticky top-0 px-[20px] md:px-[30px] py-[10px] md:py-[20px] bg-white/90">
+<header class="sticky top-0 px-[40px] md:px-[50px] py-[15px] md:py-[25px] bg-white/90">
     <div class="flex flex-row overflow-x-hidden justify-between">
-        <a href="/" class="z-100">
+        <a href="/" class="z-20">
             <img src="/assets/images/duo.jpeg" class="h-[40px] md:h-[50px]" />
         </a>
-        <div class="hamburger z-999 content-center">
+        <div class="hamburger z-20 content-center" onclick="toggle_menu()">
             <div>
                 <span class="line-1"></span>
                 <span class="line-2"></span>
@@ -43,7 +43,7 @@
 
     <!-- nav menu -->
     <div
-        class="menu z-99 fixed top-0 right-0 md:min-w-[350px] w-[100%] md:w-[30%] h-[500px] bg-black px-[40px] py-[75px]">
+        class="menu z-10 fixed top-0 right-0 md:min-w-[350px] w-[100%] md:w-[30%] h-[500px] bg-black px-[40px] py-[75px]">
         <ul>
             <!-- large -->
             <li>
@@ -76,68 +76,36 @@
     </div>
 </header>
 
-<script src="/assets/js/main.js"></script>
-
 <body>
     {{ content }}
 </body>
 
 <footer class="px-[20px] md:px-[30px] py-[10px] md:py-[20px]">
-    <!-- socials -->
-    <!-- <div class="flex flex-wrap text-center">
-        <div class="w-full pt-4">
-            <div>
-                {% if site.email %}
-                <a href="{{site.email}}" target="_blank">
+    <!-- contact -->
+    <div class="mt-10 px-[20px] md:px-[30px] flex flex-row justify-between">
+        <div>
+            <h2 class="pt-5 text-3xl text-black font-bold">
+                Let's work together.
+            </h2>
+            <div class="flex py-5">
+                <a href="{{site.email}}" class="px-5 py-2 bg-black rounded-sm">
+                    <h2 class="text-xl text-white hover:text-[#3b82f6] ease-in-out duration-300">hello@duolab.nz</h2>
+                </a>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="pt-5 text-3xl text-black font-bold">
+                Connect with us!
+            </h2>
+            <div class="flex py-5 justify-center">
+                <a href="{{site.x}}" target="_blank">
                     <button
                         class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:bg-[#3b82f6] transition-colors"
                         type="button">
-                        <i class="fas fa-paper-plane"></i>
+                        <i class="fab fa-x-twitter"></i>
                     </button>
                 </a>
-                {% endif %}
-
-                {% if site.twitter %}
-                <a href="{{site.twitter}}" target="_blank">
-                    <button
-                        class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:bg-[#3b82f6] transition-colors"
-                        type="button">
-                        <i class="fab fa-twitter"></i>
-                    </button>
-                </a>
-                {% endif %}
-
-                {% if site.facebook %}
-                <a href="{{site.facebook}}" target="_blank">
-                    <button
-                        class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:bg-[#3b82f6] transition-colors"
-                        type="button">
-                        <i class="fab fa-facebook"></i>
-                    </button>
-                </a>
-                {% endif %}
-
-                {% if site.instagram %}
-                <a href="{{site.instagram}}" target="_blank">
-                    <button
-                        class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:bg-[#3b82f6] transition-colors"
-                        type="button">
-                        <i class="fab fa-instagram"></i>
-                    </button>
-                </a>
-                {% endif %}
-
-                {% if site.github %}
-                <a href="{{site.github}}" target="_blank">
-                    <button
-                        class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:bg-[#3b82f6] transition-colors"
-                        type="button">
-                        <i class="fab fa-github"></i>
-                    </button>
-                </a>
-                {% endif %}
-
-                {% if site.linkedin %}
                 <a href="{{site.linkedin}}" target="_blank">
                     <button
                         class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:bg-[#3b82f6] transition-colors"
@@ -145,52 +113,10 @@
                         <i class="fab fa-linkedin"></i>
                     </button>
                 </a>
-                {% endif %}
-
-                {% if site.medium %}
-                <a href="{{site.medium}}" target="_blank">
-                    <button
-                        class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:bg-[#3b82f6] transition-colors"
-                        type="button">
-                        <i class="fab fa-medium"></i>
-                    </button>
-                </a>
-                {% endif %}
-
-                {% if site.eth %}
-                <a href="{{site.eth}}" target="_blank">
-                    <button
-                        class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:bg-[#3b82f6] transition-colors"
-                        type="button">
-                        <i class="fab fa-ethereum"></i>
-                    </button>
-                </a>
-                {% endif %}
-
-                {% if site.rss %}
-                <a href="{{site.rss}}" target="_blank">
-                    <button
-                        class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:bg-[#3b82f6] transition-colors"
-                        type="button">
-                        <i class="fas fa-rss"></i>
-                    </button>
-                </a>
-                {% endif %}
-
-                {% if site.google-scholar %}
-                <a href="{{site.google-scholar}}" target="_blank">
-                    <button
-                        class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:bg-[#3b82f6] transition-colors"
-                        type="button">
-                        <i class="fas fa-graduation-cap"></i>
-                    </button>
-                </a>
-                {% endif %}
-
             </div>
         </div>
-    </div> -->
-
+    </div>
+    
     <!-- copyright -->
     <div class="flex flex-row-reverse">
         <p class="text-xs">© 2025 Duolab LLC.</p>
