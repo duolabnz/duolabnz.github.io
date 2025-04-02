@@ -2,31 +2,33 @@
 title: DUO - The applied technology company.
 ---
 
-<main class="justify-center content-center">
-    <div class="mx-[40px] md:mx-[50px] flex flex-col md:flex-row">
-        <!-- text -->
-        <div class="w-full md:w-2/5 min-w-[300px] flex flex-col">
-            <h2 class="mt-5 text-xl text-black w-fit">
-                {{ site.data.texts.index.headline }}
-            </h2>
-            <h1 class="max-w-[80%] text-[xxx-large] font-bold text-black w-fit">
-                {{ site.data.texts.index.proposition }}
-            </h1>
-        </div>
+<main>
+    <div class="mt-14"></div>
+    <div class="mx-12 sm:my-10 flex flex-col">
+        <h2 class="text-lg md:text-xl text-black w-fit">
+            {{ site.data.texts.index.headline }}
+        </h2>
+        <h1
+            class="mt-2 max-w-[80%] md:max-w-[70%] text-4xl md:text-5xl leading-none md:leading-tight font-bold text-black w-fit">
+            {{ site.data.texts.index.proposition }}
+        </h1>
 
         <!-- images grid -->
-        <div class="w-full md:w-3/5 grid grid-flow-row grid-cols-2 gap-2">
+        <!-- <div class="w-full md:w-3/5 grid grid-flow-row grid-cols-2 gap-2">
             <img src="/assets/images/farmwide-all.png" />
             <img src="/assets/images/auckland-mark-testing.jpeg" />
             <img class="col-span-2 h-auto w-[100%]" src="/assets/images/hardware-pi-thin.jpeg" />
             <img src="/assets/images/chart.png" />
             <img class="row-span-2" src="/assets/images/ac37-umpiring-instagram.jpg" />
             <img src="/assets/images/hardware-pcb.jpg" />
-        </div>
+        </div> -->
     </div>
 
+    <!-- banner image -->
+    <img class="mt-8" src="/assets/images/working-in-the-shed-half.jpeg" />
+
     <!-- about us -->
-    <div class="mt-14"></div>
+    <div class="mt-24"></div>
     <h2 class="mx-[40px] md:mx-[50px] text-3xl text-black max-w-[90%]">
         {{ site.data.texts.index.about.header }}
     </h2>
@@ -40,10 +42,10 @@ title: DUO - The applied technology company.
             </a>
         </div>
     </div>
-    <img class="mt-8" src="/assets/images/working-in-the-shed-half.jpeg" />
-
+    <img class="mt-8" src="/assets/images/hardware-pi-thin.jpeg" />
+ 
     <!-- services -->
-    <div class="mt-14"></div>
+    <div class="mt-24"></div>
     <div class="mx-[40px] md:mx-[50px] grid grid-cols-2 grid-row-2">
         <h2 class="col-start-1 row-start-1 text-3xl text-black max-w-[90%]">
             {{ site.data.texts.index.services.header }}
@@ -61,7 +63,7 @@ title: DUO - The applied technology company.
     <img class="mt-8" src="/assets/images/ac37-umpiring.jpg" />
 
     <!-- ventures -->
-    <div class="mt-14"></div>
+    <div class="mt-24"></div>
     <h2 class="mx-[40px] md:mx-[50px] text-3xl text-black max-w-[90%]">
         {{ site.data.texts.index.ventures.header }}
     </h2>
@@ -75,6 +77,6 @@ title: DUO - The applied technology company.
             </a>
         </div>
     </div>
-    <!-- TODO: sizing. different image -->
-    <img class="mt-8 max-h-[400px] w-screen" src="/assets/images/stock-sea-half.jpg" />
+    <!-- TODO: different image -->
+    <img class="mt-8" src="/assets/images/stock-sea-half.jpg" />
 </main>

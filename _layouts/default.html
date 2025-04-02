@@ -26,101 +26,105 @@
     <script src="/assets/js/main.js"></script>
 </head>
 
-<!-- sticky header -->
-<header class="sticky top-0 px-[40px] md:px-[50px] py-[15px] md:py-[25px] bg-white/90">
-    <div class="flex flex-row overflow-x-hidden justify-between">
-        <a href="/" class="z-20">
-            <img src="/assets/images/duo.jpeg" class="h-[40px] md:h-[50px]" />
-        </a>
-        <div class="hamburger z-20 content-center" onclick="toggle_menu()">
-            <div>
-                <span class="line-1"></span>
-                <span class="line-2"></span>
-                <span class="line-3"></span>
+<body class="flex justify-center bg-gray-100">
+    <div class="w-screen xl:max-w-screen-xl bg-white">
+        <header class="sticky top-0 py-6 px-12 bg-white/90">
+            <div class="flex flex-row justify-between">
+                <a href="/" class="z-20">
+                    <img src="/assets/images/duo.jpeg" class="h-[40px] md:h-[50px]" />
+                </a>
+                <div class="hamburger z-20 content-center" onclick="toggle_menu()">
+                    <div>
+                        <span class="line-1"></span>
+                        <span class="line-2"></span>
+                        <span class="line-3"></span>
+                    </div>
+                </div>
             </div>
+
+            <!-- nav menu -->
+            <div
+                class="menu z-10 fixed top-0 right-0 md:min-w-[350px] w-[100%] md:w-[30%] h-[500px] bg-black px-[40px] py-[75px]">
+                <ul>
+                    <!-- large -->
+                    <li>
+                        <a href="/about">
+                            <h1>About</h1>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/services">
+                            <h1>Services</h1>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/ventures">
+                            <h1>Ventures</h1>
+                        </a>
+                    </li>
+                    <!-- smaller -->
+                    <li>
+                        <a href="/blog">
+                            <h2>Blog</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/careers">
+                            <h2>Careers</h2>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <div>
+            {{ content }}
         </div>
-    </div>
 
-    <!-- nav menu -->
-    <div
-        class="menu z-10 fixed top-0 right-0 md:min-w-[350px] w-[100%] md:w-[30%] h-[500px] bg-black px-[40px] py-[75px]">
-        <ul>
-            <!-- large -->
-            <li>
-                <a href="/about">
-                    <h1>About</h1>
-                </a>
-            </li>
-            <li>
-                <a href="/services">
-                    <h1>Services</h1>
-                </a>
-            </li>
-            <li>
-                <a href="/ventures">
-                    <h1>Ventures</h1>
-                </a>
-            </li>
-            <!-- smaller -->
-            <li>
-                <a href="/blog">
-                    <h2>Blog</h2>
-                </a>
-            </li>
-            <li>
-                <a href="/careers">
-                    <h2>Careers</h2>
-                </a>
-            </li>
-        </ul>
-    </div>
-</header>
+        <footer class="mt-24 mb-6 mx-12">
+            <!-- contact -->
+            <div class="mt-10 flex flex-row justify-between gap-2">
+                <div>
+                    <h2 class="pt-5 text-3xl text-black font-bold">
+                        Let's work together.
+                    </h2>
+                    <div class="flex py-5">
+                        <a href="{{site.email}}" class="px-5 py-2 bg-black rounded-sm">
+                            <h2 class="text-xl text-white hover:text-[#3b82f6] ease-in-out duration-300">hello@duolab.nz
+                            </h2>
+                        </a>
+                    </div>
+                </div>
 
-<body>
-    {{ content }}
+                <div>
+                    <h2 class="pt-5 text-3xl text-black font-bold">
+                        Connect with us!
+                    </h2>
+                    <div class="flex py-5 justify-center">
+                        <a href="{{site.x}}" target="_blank">
+                            <button
+                                class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:bg-[#3b82f6] transition-colors"
+                                type="button">
+                                <i class="fab fa-x-twitter"></i>
+                            </button>
+                        </a>
+                        <a href="{{site.linkedin}}" target="_blank">
+                            <button
+                                class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:bg-[#3b82f6] transition-colors"
+                                type="button">
+                                <i class="fab fa-linkedin"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- copyright -->
+            <div class="flex flex-row-reverse">
+                <p class="text-xs">© 2025 Duolab LLC.</p>
+            </div>
+        </footer>
+    </div>
 </body>
-
-<footer class="px-[20px] md:px-[30px] py-[10px] md:py-[20px]">
-    <!-- contact -->
-    <div class="mt-10 px-[20px] md:px-[30px] flex flex-row justify-between">
-        <div>
-            <h2 class="pt-5 text-3xl text-black font-bold">
-                Let's work together.
-            </h2>
-            <div class="flex py-5">
-                <a href="{{site.email}}" class="px-5 py-2 bg-black rounded-sm">
-                    <h2 class="text-xl text-white hover:text-[#3b82f6] ease-in-out duration-300">hello@duolab.nz</h2>
-                </a>
-            </div>
-        </div>
-
-        <div>
-            <h2 class="pt-5 text-3xl text-black font-bold">
-                Connect with us!
-            </h2>
-            <div class="flex py-5 justify-center">
-                <a href="{{site.x}}" target="_blank">
-                    <button
-                        class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:bg-[#3b82f6] transition-colors"
-                        type="button">
-                        <i class="fab fa-x-twitter"></i>
-                    </button>
-                </a>
-                <a href="{{site.linkedin}}" target="_blank">
-                    <button
-                        class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:bg-[#3b82f6] transition-colors"
-                        type="button">
-                        <i class="fab fa-linkedin"></i>
-                    </button>
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    <!-- copyright -->
-    <div class="flex flex-row-reverse">
-        <p class="text-xs">© 2025 Duolab LLC.</p>
-    </div>
-</footer>
 
 </html>

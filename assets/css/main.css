@@ -24,6 +24,10 @@ main {
     visibility: visible;
 }
 
+.menu li {
+    width: fit-content;
+}
+
 .menu h1 {
     font-size: xxx-large;
     font-weight: 700;

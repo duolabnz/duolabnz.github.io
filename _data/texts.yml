@@ -4,12 +4,12 @@ index:
   proposition: Exceptionally integrated solutions for your real-world problems.
 
   about:
-    header: The people for solving your <b>complex problems</b>
+    header: The people for solving your <b>complex problems</b>.
     body: At DUO, we pursue highly complex tasks, finding passion in delivering innovative solutions in difficult situations. Combining state-of-the-art hardware with elegant software, our clients achieve their goals with meaningful outcomes - regardless of the difficulty.
 
   services:
-    header: Balancing Beauty and Functionality
-    body: Our work is based on the idea that function and form should collaborate, not overtake each other. 
+    header: Balancing Beauty and Function.
+    body: Our work is focused on the idea that function and form should collaborate, not overtake each other. 
 
   ventures:
     header: Empowering your vision.
@@ -17,12 +17,13 @@ index:
 
 about:
   summary:
-    <b>DUO</b> is a two-person implementation firm that creates exceptional software and hardware solutions for individuals and businesses.
-    <br/>
-    Our services are focused on elegant solutions for difficult problems, to deliver results exceeding expectations.
+    <b>DUO</b> is a two-person implementation lab, based in the South Island of New Zealand.
+    <br/><br/>
+    Finding great reward in solving the hardest of problems, we take pride in creating exceptional solutions for individuals and businesses that are sure to exceed expectations.
   team:
     james: James comes from a genetics background but with a passion found for software he swiftly pivoted into the tech industry and hasn't contemplated going after almost 20 years! His broad experience ranges from fintech startups in NY to embedded systems and iOS development for fitness companies. Having spent time in roles from junior engineer all the way to CTO, he truely understands tech startups.
     tom: Our youngest member Tom cheekily started his career part-way through a Bachelors degree. Focusing on high-quality software, his time doing behind-the-scenes development for prestigious television broadcasts and developing native 3D applications for adjudicating sailing events is paying dividends.
+  chat: Whether you need technology developed or just want to chat (mmmm coffee...), feel free to reach out!
 
 services:
   headline: Diverse Services,<br/>Extensive Experience.
@@ -32,7 +33,7 @@ services:
       Combining cutting-edge technologies with industry best-practise, we deliver functional, scalable, and intuitive solutions catered to your needs.
       <br/>
       Whether you need modern web development, native 3D tooling, high-performance distributed data services, embedded firmware, autonomous vessels, ... you get the point, we've got you covered.
-    ac37_brief: Watch below to see the impact our software had on the 37th America's Cup!
+    ac37_brief: Watch below to see how we did all this and more for the <b>37th America's Cup!</b>
   hardware:
     short: Custom hardware and electronics platforms, sensor characterisation and integration, composite and additive manufacturing design and fabrication. 
     long: Every project is unique, and when it comes to hardware - we understand bespoke. From custom PCBs to composites, we've got your design, fabrication, and integration sorted.
@@ -41,8 +42,5 @@ services:
     long: Combining our interdisciplinary skills with precision, we ensure rapid delivery of high-quality solutions every time - guarenteed.
 
 ventures:
-  pitch: Got a fantastic idea but can't find the right people or funds to execute? Our ventures program offers flexible partnership models designed to help entrepreneurs transform their vision into reality.
-  partnership_models: Through shared equity arrangements, we provide comprehensive technical expertise and resources in exchange for ownership stakes tailored to your unique situation. Beyond traditional equity structures, we offer hybrid approaches combining milestone-based equity vesting, performance-linked investment terms, and/or staged capital deployment models.
-
-contact:
-  summary: Whether you need technology developed or just want to chat (mmmm coffee...), feel free to send us an email!
+  pitch: Got a fantastic idea but can't find the right people or funds to execute?<br/>Our ventures program offers flexible partnership models designed to help entrepreneurs transform their vision into reality.
+  partnership_models: Through shared equity arrangements, we provide comprehensive technical expertise and resources in exchange for ownership stakes tailored to your unique situation.<br/>Beyond traditional equity structures, we offer hybrid approaches combining milestone-based equity vesting, performance-linked investment terms, and/or staged capital deployment models.
