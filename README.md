@@ -19,6 +19,9 @@ npm i
 
 # run it!
 bundle exec jekyll serve -l
+
+# or view draft blogs as if they were published
+bundle exec jekyll serve -l --drafts
 ```
 
 ## Credit
