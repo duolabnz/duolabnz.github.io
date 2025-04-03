@@ -9,7 +9,8 @@ title: DUO - The applied technology company. - Services
   </h2>
 
   <!-- showcase grid -->
-  <div class="mt-12 mx-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+  <div class="mt-12"></div>
+  <div class="mx-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
     <a>
       <img class="h-auto max-h-[200px]" src="/assets/images/ui-design-wide.jpg" alt="Interface Design" />
       <h1 class="text-lg font-bold text-black pt-3">Interface Design</h1>
@@ -19,11 +20,11 @@ title: DUO - The applied technology company. - Services
       <h1 class="text-lg font-bold text-black pt-3">User Experience</h1>
     </a>
     <a>
-      <img class="h-auto max-h-[200px]" src="/assets/images/code.jpg" alt="Web Development" />
-      <h1 class="text-lg font-bold text-black pt-3">Web Development</h1>
+      <img class="h-auto max-h-[200px]" src="/assets/images/code.jpg" alt="Software Development" />
+      <h1 class="text-lg font-bold text-black pt-3">Software Development</h1>
     </a>
     <a>
-      <img class="h-auto max-h-[200px]" src="/assets/images/chart2.png" alt="Web Development" />
+      <img class="h-auto max-h-[200px]" src="/assets/images/chart2.png" alt="Data Streaming" />
       <h1 class="text-lg font-bold text-black pt-3">Data Streaming</h1>
     </a>
     <a>
@@ -46,22 +47,94 @@ title: DUO - The applied technology company. - Services
       <img class="h-auto max-h-[200px]" src="/assets/images/research.jpg" alt="Research" />
       <h1 class="text-lg font-bold text-black pt-3">Research</h1>
     </a>
+    <a>
+      <img class="h-auto max-h-[200px]" src="/assets/images/glass-timer.jpg" alt="Project Management" />
+      <h1 class="text-lg font-bold text-black pt-3">Project Management</h1>
+    </a>
+    <a>
+      <img class="h-auto max-h-[200px]" src="/assets/images/ice-drips.jpg" alt="Disaster Recovery" />
+      <h1 class="text-lg font-bold text-black pt-3">Disaster Recovery</h1>
+    </a>
   </div>
+
+  <div class="mt-24"></div>
+  <h3 class="mx-12 mt-8 text-lg md:text-xl font-mono">
+    {{ site.data.texts.services.software.short }}
+  </h3>
+  <div class="mt-8"></div>
+  <h3 class="mx-12 mt-8 text-xl md:text-2xl">
+    {{ site.data.texts.services.software.long }}
+  </h3>
 
   <div class="mt-24"></div>
   <h2 class="mx-12 text-4xl md:text-6xl font-bold text-black">
     Showcase
   </h2>
-  <h3 class="mx-12 mt-8 text-lg md:text-xl">
-    {{ site.data.texts.services.software.long }}
-  </h3>
   <h3 class="mx-12 mt-4 text-md md:text-lg">
-    {{ site.data.texts.services.software.ac37_brief }}
+    {{ site.data.texts.services.software.ac37.summary }}
+  </h3>
+  <div class="mt-2"></div>
+  <div class="mx-12 flex flex-row flex-wrap gap-2">
+    {% for tag in site.data.texts.services.software.ac37.tags %}
+    <div
+      class="border-2 border-black shadow-md hover:shadow-xl transition-shadow ease-in-out bg-gray-50 hover:bg-gray-100 w-fit h-fit p-2">
+      {{ tag }}</div>
+    {% endfor %}
+  </div>
+
+  <div class="mt-14"></div>
+  <h3 class="mx-12 mt-4 text-md md:text-lg">
+    {{ site.data.texts.services.software.ac37.video_summary }}
   </h3>
   <div class="mx-12 mt-4">
     <iframe class="min-h-80 h-auto w-full" src="https://www.youtube.com/embed/QE-Qsk0o3yU"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       referrerpolicy="no-referrer" allowfullscreen></iframe>
+  </div>
+  <div class="mt-12 mx-12 grid grid-cols-1 md:grid-cols-2 gap-2">
+    <div class="flex flex-col gap-2">
+
+      <div class="relative w-fit h-fit row-span-2">
+        <img src="/assets/images/ac37-gallery.jpg" alt="AC37 Production Gallery" />
+        <h1 class="absolute bottom-2 right-2 text-sm text-white p-1">The Production Gallery</h1>
+      </div>
+
+      <div class="relative w-fit h-fit">
+        <video class="h-auto" autoplay loop>
+          <source src="/assets/videos/marks-move.mp4" type="video/mp4" />
+        </video>
+        <h1 class="absolute bottom-2 right-2 text-sm text-white p-1">Autonomous Marks moving</h1>
+      </div>
+
+      <div class="relative w-fit h-fit">
+        <video class="h-auto" autoplay loop>
+          <source src="/assets/videos/race-tv.mp4" />
+        </video>
+        <h1 class="absolute top-2 left-2 text-sm text-white p-1">Graphics using telemetry streamed direct from the yacht</h1>
+      </div>
+
+    </div>
+    <div class="flex flex-col gap-2">
+
+      <div class="relative w-fit h-fit">
+        <video class="h-auto" autoplay loop>
+          <source src="/assets/videos/race-tut.mp4" />
+        </video>
+        <h1 class="absolute bottom-2 left-2 text-sm text-white p-1">AC40 racing in The Umpire Tool</h1>
+      </div>
+
+      <div class="relative w-fit h-fit">
+        <img class="h-auto" src="/assets/images/ac37-umpiring.jpg" alt="AC37 Umpiring" />
+        <h1 class="absolute bottom-2 left-2 text-sm text-white p-1">Umpires using our bespoke 3D solution</h1>
+      </div>
+
+      <div class="relative w-fit h-fit">
+        <img class="h-auto" src="/assets/images/ac37-umpiring-shapes.jpg" alt="AC37 Umpiring Close up" />
+        <h1 class="absolute w-full bottom-2 text-center text-xs md:text-sm text-white p-1">The Umpire Tool from above, with 2cm accuracy
+          anywhere in the world</h1>
+      </div>
+
+    </div>
   </div>
 
   <!-- hardware -->

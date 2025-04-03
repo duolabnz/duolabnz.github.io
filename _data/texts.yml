@@ -1,10 +1,7 @@
 index:
   headline: Your Applied Technology Partner.
-  # proposition: Exceptionally integrated solutions for your real-world problems.
-  proposition: Exceptionally integrated solutions for your real-world problems.
 
   about:
-    header: The people for solving your <b>complex problems</b>.
     body: At DUO, we pursue highly complex tasks, finding passion in delivering innovative solutions in difficult situations. Combining state-of-the-art hardware with elegant software, our clients achieve their goals with meaningful outcomes - regardless of the difficulty.
 
   services:
@@ -28,12 +25,49 @@ about:
 services:
   headline: Diverse Services,<br/>Extensive Experience.
   software:
-    short: From cutting-edge real-time web, native 3D interfaces, to high-performance, distributed data services and embedded systems, we have you covered.
-    long:
-      Combining cutting-edge technologies with industry best-practise, we deliver functional, scalable, and intuitive solutions catered to your needs.
-      <br/>
-      Whether you need modern web development, native 3D tooling, high-performance distributed data services, embedded firmware, autonomous vessels, ... you get the point, we've got you covered.
-    ac37_brief: Watch below to see how we did all this and more for the <b>37th America's Cup!</b>
+    short: Delivering intuitively functional, and scalable solutions catered to your needs.
+    long: Whether you need modern web development, native 3D tooling, high-performance distributed data services, embedded firmware, autonomous vessels, ... you get the point, we've got you covered.
+    # short: From cutting-edge real-time web, native 3D interfaces, to high-performance, distributed data services and embedded systems, we have you covered.
+    # long:
+    #   Combining cutting-edge technologies with industry best-practise, we deliver functional, scalable, and intuitive solutions catered to your needs.
+    #   <br/>
+    #   Whether you need modern web development, native 3D tooling, high-performance distributed data services, embedded firmware, autonomous vessels, ... you get the point, we've got you covered.
+    # ac37: 
+    #   A truely testing project, AC37 required pulling all stops with a concrete deadline, copious requirements, and a whole lot of fun.
+    #   Delivering a fully-featured Race Management System (RMS) called on our full skillset and more, involving;<br/>
+    #   - Custom hardware solutions for surviving the grueling marine environment<br/>
+    #   - Sensor integration with on-board systems, for all race yachts and even the drivetrain on the autonomous marks!<br/>
+    #   - A high-performance distributed data streaming service, for serving the various needs of Race Management, Race Teams, multiple Broadcast partners, Event Safety, PredictWind, and even the public!<br/>
+    #   - Bespoke 3D visualisation tools for Remote Umpiring and Safety Management<br/>
+    #   - Real-time management Web UIs<br/>
+    #   - So so so much more<br/>
+    #   <br/>
+    #   See below Chief Umpire (CHUMP) Richard Slater talking on the impact our software had on their workflows
+
+    ac37:
+      summary: 
+        A truely testing project, <b>AC37</b> required pulling all stops with a concrete deadline, copious requirements, and a whole lot of fun.<br/>
+        Delivering a fully-featured Race Management System (RMS) called on our full skillset and more, involving;
+
+      tags:
+        # - Custom hardware solutions for surviving the grueling marine environment
+        # - Sensor integration with on-board systems, for all race yachts and even the drivetrain on the autonomous marks!
+        # - A high-performance distributed data streaming service, for serving the various needs of Race Management, Race Teams, multiple Broadcast partners, Event Safety, PredictWind, and even the public!
+        # - Bespoke 3D visualisation tools for Remote Umpiring and Safety Management
+        # - Real-time management Web UIs
+        - Precise project management
+        - Custom hardware solutions
+        - Embedded Firmware
+        - Sensor integration
+        - Modern Web development
+        - Distributed data streaming & warehousing
+        - 3D visualisation tools
+        - IP Networking
+        - Concise communication
+        - Five nines availability
+      
+      video_summary: See Chief Umpire (CHUMP) Richard Slater talking on the impact our software had on their workflows
+
   hardware:
     short: Custom hardware and electronics platforms, sensor characterisation and integration, composite and additive manufacturing design and fabrication. 
     long: Every project is unique, and when it comes to hardware - we understand bespoke. From custom PCBs to composites, we've got your design, fabrication, and integration sorted.

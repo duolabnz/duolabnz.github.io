@@ -13,7 +13,7 @@ main {
 
 ::selection {
     color: black;
-    background-color: #3b82f6;
+    background-color: var(--color-blue-400);
 }
 
 .menu {
@@ -38,7 +38,7 @@ main {
     width: fit-content;
 }
 .menu h1:hover {
-    color: #3b82f6;
+    color: var(--color-blue-400);
     cursor: pointer;
 }
 
@@ -52,6 +52,6 @@ main {
     width: fit-content;
 }
 .menu h2:hover {
-    color: #3b82f6;
+    color: var(--color-blue-400);
     cursor: pointer;
 }

@@ -24,12 +24,6 @@ exclude:
   - package-lock.json
   - postcss.config.js
   - README.md
-  # - assets/css/tailwind.scss
-
-# files Jekyll should not delete from .site
-keep_files:
-  - assets/css/tailwind.css
-  - assets/css/tailwind.css.map
 
 # socials
 email: mailto:hello@duolab.nz
