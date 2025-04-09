@@ -159,6 +159,9 @@ module.exports = {
           },
         }
       },
+      colors: {
+        accent: '#3b82f6'
+      }
     }
   },
   variants: {},

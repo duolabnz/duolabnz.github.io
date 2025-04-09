@@ -13,7 +13,7 @@ main {
 
 ::selection {
     color: black;
-    background-color: var(--color-blue-400);
+    background-color: '#3b82f6';
 }
 
 .menu {
