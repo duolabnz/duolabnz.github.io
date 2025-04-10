@@ -40,7 +40,7 @@ div.hamburger div span.line-2 {
 }
 
 div.hamburger.active div span.line-2 {
-    background-color: '#3b82f6';
+    background-color: #3b82f6;
 }
 
 div.hamburger div span.line-3 {

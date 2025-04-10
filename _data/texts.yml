@@ -6,7 +6,9 @@ index:
 
   services:
     header: Balancing Beauty and Function.
-    body: Our work is focused on the idea that function and form should collaborate, not overtake each other. 
+    body:
+      <blockquote>"Balance good, Karate good, Everything good." - Mr. Miyagi</blockquote><br/>
+      Focusing on the collaboration of function and form, our solutions are both stunning and intuitively functional.
 
   ventures:
     header: Empowering your vision.
@@ -50,11 +52,6 @@ services:
         Delivering a fully-featured Race Management System (RMS) called on our full skillset and more, involving;
 
       tags:
-        # - Custom hardware solutions for surviving the grueling marine environment
-        # - Sensor integration with on-board systems, for all race yachts and even the drivetrain on the autonomous marks!
-        # - A high-performance distributed data streaming service, for serving the various needs of Race Management, Race Teams, multiple Broadcast partners, Event Safety, PredictWind, and even the public!
-        # - Bespoke 3D visualisation tools for Remote Umpiring and Safety Management
-        # - Real-time management Web UIs
         - Precise project management
         - Custom hardware solutions
         - Embedded Firmware
@@ -65,8 +62,9 @@ services:
         - IP Networking
         - Concise communication
         - Five nines availability
+        # - Autonomous vessels
       
-      video_summary: See Chief Umpire (CHUMP) Richard Slater talking on the impact our software had on their workflows
+      video_summary: See Chief Umpire (CHUMP) Richard Slater on the impact our software had on their workflows
 
   hardware:
     short: Custom hardware and electronics platforms, sensor characterisation and integration, composite and additive manufacturing design and fabrication. 
@@ -76,5 +74,10 @@ services:
     long: Combining our interdisciplinary skills with precision, we ensure rapid delivery of high-quality solutions every time - guarenteed.
 
 ventures:
-  pitch: Got a fantastic idea but can't find the right people or funds to execute?<br/>Our ventures program offers flexible partnership models designed to help entrepreneurs transform their vision into reality.
-  partnership_models: Through shared equity arrangements, we provide comprehensive technical expertise and resources in exchange for ownership stakes tailored to your unique situation.<br/>Beyond traditional equity structures, we offer hybrid approaches combining milestone-based equity vesting, performance-linked investment terms, and/or staged capital deployment models.
+  # pitch: Got a fantastic idea but can't find the right people or funds to execute?<br/>Our ventures program offers flexible partnership models designed to help entrepreneurs transform their vision into reality.
+  pitch: Helping transform your vision into reality.
+  partnership_models:
+    Through shared equity arrangements, we provide comprehensive technical expertise and resources in exchange for ownership stakes tailored to your unique situation.<br/>
+    Beyond traditional equity structures, we offer hybrid approaches combining milestone-based equity vesting, performance-linked investment terms, and/or staged capital deployment models.<br/>
+    <br/>
+    Get in contact now to find out how we can build together.

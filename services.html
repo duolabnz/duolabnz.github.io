@@ -66,7 +66,7 @@ title: DUO - The applied technology company. - Services
     {{ site.data.texts.services.software.long }}
   </h3>
 
-  <div class="mt-24"></div>
+  <div id="showcase" class="mb-24"></div>
   <h2 class="mx-12 text-4xl md:text-6xl font-bold text-black">
     Showcase
   </h2>
@@ -92,49 +92,66 @@ title: DUO - The applied technology company. - Services
       referrerpolicy="no-referrer" allowfullscreen></iframe>
   </div>
   <div class="mt-12 mx-12 grid grid-cols-1 md:grid-cols-2 gap-2">
-    <div class="flex flex-col gap-2">
+    <div class="flex flex-col gap-5">
 
-      <div class="relative w-fit h-fit row-span-2">
+      <div class="row-span-2 text-black hover:text-accent transition-colors duration-300">
         <img src="/assets/images/ac37-gallery.jpg" alt="AC37 Production Gallery" />
-        <h1 class="absolute bottom-2 right-2 text-sm text-white p-1">The Production Gallery</h1>
+        <h1 class="text-base font-bold mt-3">The Production Gallery</h1>
       </div>
 
-      <div class="relative w-fit h-fit">
-        <video class="h-auto" autoplay loop>
+      <div class="text-black hover:text-accent transition-colors duration-300" onmouseenter="start_video(this)"
+        onmouseleave="stop_video(this)">
+        <video class="h-auto" loop muted>
           <source src="/assets/videos/marks-move.mp4" type="video/mp4" />
         </video>
-        <h1 class="absolute bottom-2 right-2 text-sm text-white p-1">Autonomous Marks moving</h1>
+        <h1 class="text-base font-bold mt-3">Autonomous Marks moving</h1>
       </div>
 
-      <div class="relative w-fit h-fit">
-        <video class="h-auto" autoplay loop>
+      <div class="text-black hover:text-accent transition-colors duration-300" onmouseenter="start_video(this)"
+        onmouseleave="stop_video(this)">
+        <video class="h-auto" loop muted>
           <source src="/assets/videos/race-tv.mp4" />
         </video>
-        <h1 class="absolute top-2 left-2 text-sm text-white p-1">Graphics using telemetry streamed direct from the yacht</h1>
+        <h1 class="text-base font-bold mt-3">Graphics powered by our data streaming service</h1>
       </div>
 
     </div>
-    <div class="flex flex-col gap-2">
 
-      <div class="relative w-fit h-fit">
-        <video class="h-auto" autoplay loop>
+    <div class="flex flex-col gap-5">
+
+      <div class="text-black hover:text-accent transition-colors duration-300" onmouseenter="start_video(this)"
+        onmouseleave="stop_video(this)">
+        <video class="h-auto" loop muted>
           <source src="/assets/videos/race-tut.mp4" />
         </video>
-        <h1 class="absolute bottom-2 left-2 text-sm text-white p-1">AC40 racing in The Umpire Tool</h1>
+        <h1 class="text-base font-bold mt-3">AC40 racing in The Umpire Tool</h1>
       </div>
 
-      <div class="relative w-fit h-fit">
+      <div class="text-black hover:text-accent transition-colors duration-300">
         <img class="h-auto" src="/assets/images/ac37-umpiring.jpg" alt="AC37 Umpiring" />
-        <h1 class="absolute bottom-2 left-2 text-sm text-white p-1">Umpires using our bespoke 3D solution</h1>
+        <h1 class="text-base font-bold mt-3">Umpires using our bespoke 3D solution</h1>
       </div>
 
-      <div class="relative w-fit h-fit">
+      <div class="text-black hover:text-accent transition-colors duration-300">
         <img class="h-auto" src="/assets/images/ac37-umpiring-shapes.jpg" alt="AC37 Umpiring Close up" />
-        <h1 class="absolute w-full bottom-2 text-center text-xs md:text-sm text-white p-1">The Umpire Tool from above, with 2cm accuracy
+        <h1 class="text-base font-bold mt-3">The Umpire Tool from above,
+          with 2cm accuracy
           anywhere in the world</h1>
       </div>
 
     </div>
+
+    <script>
+      // autoplay videos on mobile
+      let is_mobile = /Mobi|Android/i.test(navigator.userAgent);
+      if (is_mobile) {
+        let videos = document.getElementsByTagName('video');
+        Array.from(videos).forEach(video => {
+          video.setAttribute('autoplay', 'true');
+          video.play();
+        });
+      }
+    </script>
   </div>
 
   <!-- hardware -->
