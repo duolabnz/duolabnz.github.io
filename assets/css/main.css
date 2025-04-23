@@ -7,7 +7,7 @@
 
 @import url("/assets/css/hamburger.css");
 
-main {
+html {
     scroll-behavior: smooth;
 }
 

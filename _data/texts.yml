@@ -2,12 +2,10 @@ index:
   headline: Your Applied Technology Partner.
 
   about:
-    body: At DUO, we pursue highly complex tasks, finding passion in delivering innovative solutions in difficult situations. Combining state-of-the-art hardware with elegant software, our clients achieve their goals with meaningful outcomes - regardless of the difficulty.
+    body: At DUO, we pursue highly complex tasks, finding passion in delivering innovative solutions in the most difficult of situations.
 
   services:
-    header: Balancing Beauty and Function.
     body:
-      <blockquote>"Balance good, Karate good, Everything good." - Mr. Miyagi</blockquote><br/>
       Focusing on the collaboration of function and form, our solutions are both stunning and intuitively functional.
 
   ventures:
@@ -15,56 +13,44 @@ index:
     body: Chasing a dream but can't find the right people or funds? We offer flexible partnership models to fit your unique situation.
 
 about:
-  summary:
-    <b>DUO</b> is a two-person implementation lab, based in the South Island of New Zealand.
-    <br/><br/>
-    Finding great reward in solving the hardest of problems, we take pride in creating exceptional solutions for individuals and businesses that are sure to exceed expectations.
   team:
-    james: James comes from a genetics background but with a passion found for software he swiftly pivoted into the tech industry and hasn't contemplated going after almost 20 years! His broad experience ranges from fintech startups in NY to embedded systems and iOS development for fitness companies. Having spent time in roles from junior engineer all the way to CTO, he truely understands tech startups.
-    tom: Our youngest member Tom cheekily started his career part-way through a Bachelors degree. Focusing on high-quality software, his time doing behind-the-scenes development for prestigious television broadcasts and developing native 3D applications for adjudicating sailing events is paying dividends.
+    james:
+      James comes from a genetics background but with a passion found for software he swiftly pivoted into the tech industry and hasn't contemplated going after almost 20 years!<br/>
+      His broad experience ranges from fintech startups in NYC to embedded systems and iOS development for global fitness brands. Having spent time in roles from junior engineer all the way to CTO, he truely understands tech startups.<br/>
+      Outside of the office, you'll usually find James on his mountain bike with his kids. (P.S his UI/UX designs are next-level)
+    
+    tom: 
+      Tom has a Bachelors in Computer Science, and is always dreaming up ways to integrate technology into nature.<br/>
+      Finding a niche between technology, sailing, and live TV broadcasts, so far he's had the privilege to be part of;<br/>
+      - custom hardware/software solutions for Olympic sailors,<br/>
+      - behind-the-scenes software for live TV broadcasts,<br/>
+      - software solutions for industry-leading audio equipment providers,<br/>
+      - native 3D applications for adjudicating world-class sailing events<br/>
+      When he's not writing software, you can find Tom out in the surf, hiking around the South Island, or backpacking the continents with his partner.
+      
   chat: Whether you need technology developed or just want to chat (mmmm coffee...), feel free to reach out!
 
 services:
   headline: Diverse Services,<br/>Extensive Experience.
   software:
     short: Delivering intuitively functional, and scalable solutions catered to your needs.
-    long: Whether you need modern web development, native 3D tooling, high-performance distributed data services, embedded firmware, autonomous vessels, ... you get the point, we've got you covered.
-    # short: From cutting-edge real-time web, native 3D interfaces, to high-performance, distributed data services and embedded systems, we have you covered.
-    # long:
-    #   Combining cutting-edge technologies with industry best-practise, we deliver functional, scalable, and intuitive solutions catered to your needs.
-    #   <br/>
-    #   Whether you need modern web development, native 3D tooling, high-performance distributed data services, embedded firmware, autonomous vessels, ... you get the point, we've got you covered.
-    # ac37: 
-    #   A truely testing project, AC37 required pulling all stops with a concrete deadline, copious requirements, and a whole lot of fun.
-    #   Delivering a fully-featured Race Management System (RMS) called on our full skillset and more, involving;<br/>
-    #   - Custom hardware solutions for surviving the grueling marine environment<br/>
-    #   - Sensor integration with on-board systems, for all race yachts and even the drivetrain on the autonomous marks!<br/>
-    #   - A high-performance distributed data streaming service, for serving the various needs of Race Management, Race Teams, multiple Broadcast partners, Event Safety, PredictWind, and even the public!<br/>
-    #   - Bespoke 3D visualisation tools for Remote Umpiring and Safety Management<br/>
-    #   - Real-time management Web UIs<br/>
-    #   - So so so much more<br/>
-    #   <br/>
-    #   See below Chief Umpire (CHUMP) Richard Slater talking on the impact our software had on their workflows
+    long: Whether you need modern web development, native 3D tooling, high-performance distributed data services, custom hardware and sensor integration, embedded firmware, autonomous vessels, ... you get the point, we've got you covered.
 
     ac37:
-      summary: 
-        A truely testing project, <b>AC37</b> required pulling all stops with a concrete deadline, copious requirements, and a whole lot of fun.<br/>
-        Delivering a fully-featured Race Management System (RMS) called on our full skillset and more, involving;
-
       tags:
+        - Exceptional communication
         - Precise project management
+        - Distributed data streaming
+        - 3D visualisation tools
+        - Modern Web development
         - Custom hardware solutions
         - Embedded Firmware
         - Sensor integration
-        - Modern Web development
-        - Distributed data streaming & warehousing
-        - 3D visualisation tools
+        - Hybrid-Cloud Infrastructure
         - IP Networking
-        - Concise communication
         - Five nines availability
-        # - Autonomous vessels
       
-      video_summary: See Chief Umpire (CHUMP) Richard Slater on the impact our software had on their workflows
+      video_summary: See Chief Umpire (CHUMP) Richard Slater on the impact our solutions had on their workflows
 
   hardware:
     short: Custom hardware and electronics platforms, sensor characterisation and integration, composite and additive manufacturing design and fabrication. 

@@ -11,6 +11,3 @@ Gemfile.lock
 
 # JavaScript
 node_modules
-
-# temp
-*.mp4

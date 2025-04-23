@@ -12,24 +12,32 @@ title: DUO - The applied technology company. - Services
   <div class="mt-12"></div>
   <div class="mx-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
     <a>
-      <img class="h-auto max-h-[200px]" src="/assets/images/ui-design-wide.jpg" alt="Interface Design" />
-      <h1 class="text-lg font-bold text-black pt-3">Interface Design</h1>
-    </a>
-    <a>
-      <img class="h-auto max-h-[200px]" src="/assets/images/ux-party.jpg" alt="UX design" />
-      <h1 class="text-lg font-bold text-black pt-3">User Experience</h1>
-    </a>
-    <a>
-      <img class="h-auto max-h-[200px]" src="/assets/images/code.jpg" alt="Software Development" />
-      <h1 class="text-lg font-bold text-black pt-3">Software Development</h1>
-    </a>
-    <a>
-      <img class="h-auto max-h-[200px]" src="/assets/images/chart2.png" alt="Data Streaming" />
-      <h1 class="text-lg font-bold text-black pt-3">Data Streaming</h1>
+      <img class="h-auto max-h-[200px]" src="/assets/images/server.jpg" alt="Infrastructure" />
+      <h1 class="text-lg font-bold text-black pt-3">Infrastructure management</h1>
     </a>
     <a>
       <img class="h-auto max-h-[200px]" src="/assets/images/hardware-pcb.jpg" alt="Electronics" />
       <h1 class="text-lg font-bold text-black pt-3">Electronics Design</h1>
+    </a>
+    <a>
+      <img class="h-auto max-h-[200px]" src="/assets/images/chart2-small.png" alt="Data Streaming" />
+      <h1 class="text-lg font-bold text-black pt-3">Data Streaming</h1>
+    </a>
+    <a>
+      <img class="h-auto max-h-[200px]" src="/assets/images/benchtop-sensors.jpg" alt="Sensors" />
+      <h1 class="text-lg font-bold text-black pt-3">Sensor Integration</h1>
+    </a>
+    <a>
+      <img class="h-auto max-h-[200px]" src="/assets/images/ui-design-wide.jpg" alt="Web Design" />
+      <h1 class="text-lg font-bold text-black pt-3">Web Design</h1>
+    </a>
+    <!-- <a>
+      <img class="h-auto max-h-[200px]" src="/assets/images/ux-party.jpg" alt="UX design" />
+      <h1 class="text-lg font-bold text-black pt-3">Experience Design</h1>
+    </a> -->
+    <a>
+      <img class="h-auto max-h-[200px]" src="/assets/images/code.jpg" alt="Web Development" />
+      <h1 class="text-lg font-bold text-black pt-3">Web Development</h1>
     </a>
     <a>
       <img class="h-auto max-h-[200px]" src="/assets/images/ac37-umpiring-shapes.jpg" alt="Simulation" />
@@ -71,13 +79,15 @@ title: DUO - The applied technology company. - Services
     Showcase
   </h2>
   <h3 class="mx-12 mt-4 text-md md:text-lg">
-    {{ site.data.texts.services.software.ac37.summary }}
+    A truely testing project, <a class="text-accent font-bold" href="https://www.americascup.com">AC37</a> required
+    pulling all stops with a concrete deadline, copious requirements, and a whole lot of fun.<br />
+    Delivering a fully-featured Race Management System (RMS) called on our full skillset and more, involving;
   </h3>
   <div class="mt-2"></div>
   <div class="mx-12 flex flex-row flex-wrap gap-2">
     {% for tag in site.data.texts.services.software.ac37.tags %}
     <div
-      class="border-2 border-black shadow-md hover:shadow-xl transition-shadow ease-in-out bg-gray-50 hover:bg-gray-100 w-fit h-fit p-2">
+      class="border-2 border-black hover:border-accent shadow-md hover:shadow-xl transform transition-shadow ease-in-out bg-gray-50 hover:bg-gray-100 w-fit h-fit p-2">
       {{ tag }}</div>
     {% endfor %}
   </div>
@@ -99,19 +109,33 @@ title: DUO - The applied technology company. - Services
         <h1 class="text-base font-bold mt-3">The Production Gallery</h1>
       </div>
 
-      <div class="text-black hover:text-accent transition-colors duration-300" onmouseenter="start_video(this)"
-        onmouseleave="stop_video(this)">
-        <video class="h-auto" loop muted>
-          <source src="/assets/videos/marks-move.mp4" type="video/mp4" />
-        </video>
+      <div class="text-black hover:text-accent transition-colors duration-300" onmouseenter="play_video(this)"
+        onmouseleave="pause_video(this)" onclick="toggle_video(this)">
+        <div class="relative">
+          <video class="h-auto" loop muted>
+            <source src="/assets/videos/marks-move.mp4" />
+          </video>
+          <div
+            class="indicator absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white animate-pulse duration-1000">
+            <i class="block sm:hidden fa-solid fa-hand-point-up" style="font-size: 35px;"></i>
+            <i class="hidden sm:block fa-solid fa-arrow-pointer" style="font-size: 35px;"></i>
+          </div>
+        </div>
         <h1 class="text-base font-bold mt-3">Autonomous Marks moving</h1>
       </div>
 
-      <div class="text-black hover:text-accent transition-colors duration-300" onmouseenter="start_video(this)"
-        onmouseleave="stop_video(this)">
-        <video class="h-auto" loop muted>
-          <source src="/assets/videos/race-tv.mp4" />
-        </video>
+      <div class="text-black hover:text-accent transition-colors duration-300" onmouseenter="play_video(this)"
+        onmouseleave="pause_video(this)" onclick="toggle_video(this)">
+        <div class="relative">
+          <video class="h-auto" loop muted>
+            <source src="/assets/videos/race-tv.mp4" />
+          </video>
+          <div
+            class="indicator absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white animate-pulse duration-1000">
+            <i class="block sm:hidden fa-solid fa-hand-point-up" style="font-size: 35px;"></i>
+            <i class="hidden sm:block fa-solid fa-arrow-pointer" style="font-size: 35px;"></i>
+          </div>
+        </div>
         <h1 class="text-base font-bold mt-3">Graphics powered by our data streaming service</h1>
       </div>
 
@@ -119,11 +143,18 @@ title: DUO - The applied technology company. - Services
 
     <div class="flex flex-col gap-5">
 
-      <div class="text-black hover:text-accent transition-colors duration-300" onmouseenter="start_video(this)"
-        onmouseleave="stop_video(this)">
-        <video class="h-auto" loop muted>
-          <source src="/assets/videos/race-tut.mp4" />
-        </video>
+      <div class="text-black hover:text-accent transition-colors duration-300" onmouseenter="play_video(this)"
+        onmouseleave="pause_video(this)" onclick="toggle_video(this)">
+        <div class="relative">
+          <video class="h-auto" loop muted>
+            <source src="/assets/videos/race-tut.mp4" />
+          </video>
+          <div
+            class="indicator absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white animate-pulse duration-1000">
+            <i class="block sm:hidden fa-solid fa-hand-point-up" style="font-size: 35px;"></i>
+            <i class="hidden sm:block fa-solid fa-arrow-pointer" style="font-size: 35px;"></i>
+          </div>
+        </div>
         <h1 class="text-base font-bold mt-3">AC40 racing in The Umpire Tool</h1>
       </div>
 
@@ -140,18 +171,6 @@ title: DUO - The applied technology company. - Services
       </div>
 
     </div>
-
-    <script>
-      // autoplay videos on mobile
-      let is_mobile = /Mobi|Android/i.test(navigator.userAgent);
-      if (is_mobile) {
-        let videos = document.getElementsByTagName('video');
-        Array.from(videos).forEach(video => {
-          video.setAttribute('autoplay', 'true');
-          video.play();
-        });
-      }
-    </script>
   </div>
 
   <!-- hardware -->

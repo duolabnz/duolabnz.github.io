@@ -9,16 +9,37 @@ module.exports = {
     extend: {
       // https://cruip.com/creating-a-sliding-text-animation-with-tailwind-css/
       animation: {
-        'text-slide-2': 'text-slide-2 5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
-        'text-slide-3': 'text-slide-3 7.5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
-        'text-slide-4': 'text-slide-4 10s cubic-bezier(0.83, 0, 0.17, 1) infinite',
-        'text-slide-5': 'text-slide-5 12.5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
-        'text-slide-6': 'text-slide-6 15s cubic-bezier(0.83, 0, 0.17, 1) infinite',
-        'text-slide-7': 'text-slide-7 17.5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
-        'text-slide-8': 'text-slide-8 20s cubic-bezier(0.83, 0, 0.17, 1) infinite',
+        // @keyframes | duration | easing-function | delay | iteration-count | direction | fill-mode | play-state | name
+        'text-slide-up-2': 'text-slide-up-2 5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
+        'text-slide-up-3': 'text-slide-up-3 7.5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
+        'text-slide-up-4': 'text-slide-up-4 10s cubic-bezier(0.83, 0, 0.17, 1) infinite',
+        'text-slide-up-5': 'text-slide-up-5 12.5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
+        'text-slide-up-6': 'text-slide-up-6 15s cubic-bezier(0.83, 0, 0.17, 1) infinite',
+        'text-slide-up-7': 'text-slide-up-7 17.5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
+        'text-slide-up-8': 'text-slide-up-8 20s cubic-bezier(0.83, 0, 0.17, 1) infinite',
+
+        'wipe-in-from-left-100': 'wipe-in-from-left 0.7s ease-out 0.1s forwards',
+        'wipe-in-from-left-200': 'wipe-in-from-left 0.7s ease-out 0.2s forwards',
+        'wipe-in-from-left-300': 'wipe-in-from-left 0.7s ease-out 0.3s forwards',
+        'wipe-in-from-left-500': 'wipe-in-from-left 0.7s ease-out 0.5s forwards',
+        'wipe-in-from-left-700': 'wipe-in-from-left 0.7s ease-out 0.7s forwards',
+        'wipe-in-from-left-1000': 'wipe-in-from-left 0.7s ease-out 1s forwards',
+        'wipe-in-from-left-1200': 'wipe-in-from-left 0.7s ease-out 1.2s forwards',
+        'wipe-in-from-left-1500': 'wipe-in-from-left 0.7s ease-out 1.5s forwards',
+        'wipe-in-from-left-2000': 'wipe-in-from-left 0.7s ease-out 2s forwards',
+
+        'wipe-in-from-bottom-100': 'wipe-in-from-bottom 0.7s ease-out 0.1s forwards',
+        'wipe-in-from-bottom-200': 'wipe-in-from-bottom 0.7s ease-out 0.2s forwards',
+        'wipe-in-from-bottom-300': 'wipe-in-from-bottom 0.7s ease-out 0.3s forwards',
+        'wipe-in-from-bottom-500': 'wipe-in-from-bottom 0.7s ease-out 0.5s forwards',
+        'wipe-in-from-bottom-700': 'wipe-in-from-bottom 0.7s ease-out 0.7s forwards',
+        'wipe-in-from-bottom-1000': 'wipe-in-from-bottom 0.7s ease-out 1s forwards',
+        'wipe-in-from-bottom-1200': 'wipe-in-from-bottom 0.7s ease-out 1.2s forwards',
+        'wipe-in-from-bottom-1500': 'wipe-in-from-bottom 0.7s ease-out 1.5s forwards',
+        'wipe-in-from-bottom-2000': 'wipe-in-from-bottom 0.7s ease-out 2s forwards',
       },
       keyframes: {
-        'text-slide-2': {
+        'text-slide-up-2': {
           '0%, 40%': {
             transform: 'translateY(0%)',
           },
@@ -29,7 +50,7 @@ module.exports = {
             transform: 'translateY(-66.66%)',
           },
         },
-        'text-slide-3': {
+        'text-slide-up-3': {
           '0%, 26.66%': {
             transform: 'translateY(0%)',
           },
@@ -43,7 +64,7 @@ module.exports = {
             transform: 'translateY(-75%)',
           },
         },
-        'text-slide-4': {
+        'text-slide-up-4': {
           '0%, 20%': {
             transform: 'translateY(0%)',
           },
@@ -60,7 +81,7 @@ module.exports = {
             transform: 'translateY(-80%)',
           },
         },
-        'text-slide-5': {
+        'text-slide-up-5': {
           '0%, 16%': {
             transform: 'translateY(0%)',
           },
@@ -80,7 +101,7 @@ module.exports = {
             transform: 'translateY(-83.33%)',
           },
         },
-        'text-slide-6': {
+        'text-slide-up-6': {
           '0%, 13.33%': {
             transform: 'translateY(0%)',
           },
@@ -103,7 +124,7 @@ module.exports = {
             transform: 'translateY(-85.71%)',
           },
         },
-        'text-slide-7': {
+        'text-slide-up-7': {
           '0%, 11.43%': {
             transform: 'translateY(0%)',
           },
@@ -129,7 +150,7 @@ module.exports = {
             transform: 'translateY(-87.5%)',
           },
         },
-        'text-slide-8': {
+        'text-slide-up-8': {
           '0%, 10%': {
             transform: 'translateY(0%)',
           },
@@ -157,11 +178,34 @@ module.exports = {
           '100%': {
             transform: 'translateY(-88.88%)',
           },
+        },
+        'wipe-in-from-left': {
+          from: {
+            transform: 'translateX(-100%)',
+            opacity: 0,
+          },
+          to: {
+            transform: 'translateX(0)',
+            opacity: 1,
+          }
+        },
+        'wipe-in-from-bottom': {
+          from: {
+            transform: 'translateY(100%)',
+            opacity: 0,
+          },
+          to: {
+            transform: 'translateY(0)',
+            opacity: 1,
+          }
         }
       },
       colors: {
         accent: '#3b82f6'
-      }
+      },
+      fontFamily: {
+        sans: ['Lexend', 'sans-serif']
+      },
     }
   },
   variants: {},

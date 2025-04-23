@@ -5,15 +5,15 @@ title: DUO - The applied technology company.
 <main>
     <div class="mt-4"></div>
     <div class="mx-12 flex flex-col">
-        <h2 class="text-lg md:text-xl text-black w-fit font-mono">
+        <h2 class="text-lg md:text-xl text-black w-fit font-mono opacity-0 animate-wipe-in-from-left-100">
             {{ site.data.texts.index.headline }}
         </h2>
         <div
-            class="mt-2 max-w-[80%] md:max-w-[75%] text-4xl md:text-5xl leading-none md:leading-tight font-bold text-black w-fit [text-wrap:balance]">
+            class="mt-2 max-w-[80%] md:max-w-[75%] text-4xl md:text-5xl leading-none md:leading-tight font-bold text-black w-fit [text-wrap:balance] opacity-0 animate-wipe-in-from-left-200">
             Exceptionally
             <span
                 class="text-accent inline-flex flex-col h-[calc(theme(fontSize.3xl)*theme(lineHeight.relaxed))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.relaxed))] overflow-hidden">
-                <ul class="block text-left leading-tight [&_li]:block animate-text-slide-7">
+                <ul class="block text-left leading-tight [&_li]:block animate-text-slide-up-7">
                     <li>Integrated</li>
                     <li>Intuitive</li>
                     <li>Performing</li>
@@ -31,26 +31,28 @@ title: DUO - The applied technology company.
 
     <!-- banner image -->
     <div class="mt-8"></div>
-    <a class="text-black hover:text-accent transition-colors duration-300" href="/services#showcase">
-        <img src="/assets/images/working-in-the-shed-half.jpeg" />
-        <div class="mt-4"></div>
-        <div class="mx-16 flex flex-row gap-4 justify-start">
-            <h2 class="content-center text-base md:text-lg font-bold">
-                AC75 Onboard Data System
-            </h2>
-            <h2 class="content-center text-sm md:text-base italic">
-                37th Americas Cup
-            </h2>
-        </div>
-    </a>
+    <div class="opacity-0 animate-wipe-in-from-bottom-300">
+        <a class="text-black hover:text-accent hover:opacity-100 transition-all duration-300" href="/services#showcase">
+            <img src="/assets/images/working-in-the-shed-half.jpeg" />
+            <div class="mt-4"></div>
+            <div class="mx-16 flex flex-row gap-4 justify-start">
+                <h2 class="content-center text-base md:text-lg font-bold">
+                    AC Data System
+                </h2>
+                <h2 class="content-center text-sm md:text-base italic">
+                    37th Americas Cup
+                </h2>
+            </div>
+        </a>
+    </div>
 
     <!-- about us -->
     <div class="mt-24"></div>
     <h2 class="mx-[40px] md:mx-[50px] text-3xl text-black max-w-[90%]">
-        The people for solving your <b class="text-accent hover:animate-pulse">complex problems</b>.
+        The people for solving your <b class="text-accent">complex problems</b>.
     </h2>
-    <div class="mt-8 px-[20%]">
-        <h2 class="text-lg text-black md:max-w-[90%] font-mono">
+    <div class="mt-8 pl-[10%] md:pl-[20%] pr-[5%] md:pr-[10%]">
+        <h2 class="text-lg md:text-xl text-black w-fit font-mono">
             {{ site.data.texts.index.about.body }}
         </h2>
         <div class="mt-8 flex">
@@ -64,13 +66,12 @@ title: DUO - The applied technology company.
 
     <!-- services -->
     <div class="mt-24"></div>
-    <div class="mx-[40px] md:mx-[50px] grid grid-cols-2 grid-row-2">
-        <h2 class="col-start-1 row-start-1 text-3xl text-black max-w-[90%]">
-            {{ site.data.texts.index.services.header }}
+    <div class="mx-[40px] md:mx-[50px] md:grid grid-cols-2 grid-row-2">
+        <h2 class="col-start-1 row-start-1 text-right text-3xl text-black max-w-full md:max-w-[90%]">
+            Deep Expertise meets Rapid Integration
         </h2>
-        <h2 class="col-start-2 row-start-1 text-lg text-black font-mono">
-            <blockquote>"Balance good, Karate good, Everything good." - Mr. Miyagi</blockquote><br/>
-            Focusing on the <span class="text-accent hover:animate-pulse">collaboration of function and form</span>, our solutions are both stunning and intuitively functional. 
+        <h2 class="col-start-2 row-start-1 text-lg md:text-xl text-black w-fit font-mono mt-8 md:mt-0">
+            We excel at delivering exceptional solutions as a cohesive team, or swiftly integrating into existing ones. With deep expertise and an unmatched ability to <span class="text-accent">quickly learn and adapt</span>, we ensure impactful results tailored to your needs.
         </h2>
         <div class="col-start-2 row-start-2 flex mt-8">
             <a href="/services" class="px-5 py-2 bg-black rounded-sm">
@@ -84,10 +85,10 @@ title: DUO - The applied technology company.
     <!-- ventures -->
     <div class="mt-24"></div>
     <h2 class="mx-[40px] md:mx-[50px] text-3xl text-black max-w-[90%]">
-        Empowering your <span class="text-accent hover:animate-pulse">vision</span>.
+        Empowering your <span class="text-accent">vision</span>.
     </h2>
     <div class="mt-8 px-[20%]">
-        <h2 class="text-lg text-black max-w-[90%] font-mono">
+        <h2 class="text-lg md:text-xl text-black w-fit font-mono">
             {{ site.data.texts.index.ventures.body }}
         </h2>
         <div class="flex mt-8">
