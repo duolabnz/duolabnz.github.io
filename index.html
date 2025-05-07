@@ -2,102 +2,77 @@
 title: DUO - The applied technology company.
 ---
 
-<main>
-    <div class="mt-4"></div>
-    <div class="mx-12 flex flex-col">
-        <h2 class="text-lg md:text-xl text-black w-fit font-mono opacity-0 animate-wipe-in-from-left-100">
-            {{ site.data.texts.index.headline }}
-        </h2>
-        <div
-            class="mt-2 max-w-[80%] md:max-w-[75%] text-4xl md:text-5xl leading-none md:leading-tight font-bold text-black w-fit [text-wrap:balance] opacity-0 animate-wipe-in-from-left-200">
-            Exceptionally
-            <span
-                class="text-accent inline-flex flex-col h-[calc(theme(fontSize.3xl)*theme(lineHeight.relaxed))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.relaxed))] overflow-hidden">
-                <ul class="block text-left leading-tight [&_li]:block animate-text-slide-up-7">
-                    <li>Integrated</li>
-                    <li>Intuitive</li>
-                    <li>Performing</li>
-                    <li>Functional</li>
-                    <li>Intelligent</li>
-                    <li>Scalable</li>
-                    <li>Innovative</li>
-                    <li aria-hidden="true">Integrated</li>
-                </ul>
-            </span>
-            <br />
-            solutions for your real-world problems.
-        </div>
-    </div>
+<main class="static flex flex-col mx-10 md:mx-14 lg:mx-20">
+    <div class="flex flex-col h-[calc(100vh-140px)] min-h-[200px] 2xl:min-h-[450px] max-h-screen mt-10">
+        <div class="flex flex-grow flex-col justify-between w-full">
+            <div class="flex flex-col w-full h-fit justify-start lg:justify-center items-start lg:items-center">
+                <div>
+                    <div class="w-fit">
+                        <h1 id="title"
+                            class="[font-size:clamp(8rem,20vw,18rem)] leading-none text-white animate-blink-in [--text-shadow-color:theme(colors.dark-cyan)] text-shadow-3xl">
+                            DUO
+                        </h1>
+                        <div class="h-1 bg-green-cyan opacity-0 animate-[grow-in-left_0.7s_2s_forwards]"></div>
+                    </div>
 
-    <!-- banner image -->
-    <div class="mt-8"></div>
-    <div class="opacity-0 animate-wipe-in-from-bottom-300">
-        <a class="text-black hover:text-accent hover:opacity-100 transition-all duration-300" href="/services#showcase">
-            <img src="/assets/images/working-in-the-shed-half.jpeg" />
-            <div class="mt-4"></div>
-            <div class="mx-16 flex flex-row gap-4 justify-start">
-                <h2 class="content-center text-base md:text-lg font-bold">
-                    AC Data System
-                </h2>
-                <h2 class="content-center text-sm md:text-base italic">
-                    37th Americas Cup
-                </h2>
+                    <h1
+                        class="pt-5 [font-size:clamp(1.1rem,2.5vw,2.5rem)] text-start lg:text-center leading-none text-white opacity-0 animate-[slide-in-up_1s_2.7s_forwards] [--text-shadow-color:theme(colors.green-cyan)] text-shadow-xs">
+                        The Applied Technology Company
+                    </h1>
+                </div>
             </div>
-        </a>
-    </div>
 
-    <!-- about us -->
-    <div class="mt-24"></div>
-    <h2 class="mx-[40px] md:mx-[50px] text-3xl text-black max-w-[90%]">
-        The people for solving your <b class="text-accent">complex problems</b>.
-    </h2>
-    <div class="mt-8 pl-[10%] md:pl-[20%] pr-[5%] md:pr-[10%]">
-        <h2 class="text-lg md:text-xl text-black w-fit font-mono">
-            {{ site.data.texts.index.about.body }}
-        </h2>
-        <div class="mt-8 flex">
-            <a href="/about" class="px-5 py-2 bg-black rounded-sm">
-                <h2 class="text-xl text-white hover:text-accent ease-in-out duration-300">Learn more about us</h2>
-            </a>
+            <div id="scroll-indicator" class="flex flex-row w-full justify-center">
+                <a href="#about"
+                    class="flex flex-row w-fit h-fit align-middle gap-4 text-white text-2xl opacity-0 animate-[slide-in-up_1s_3.5s_forwards]">
+                    <svg width="24" height="24" class="m-2 fill-white stroke-white stroke-1">
+                        <polygon points="0 0,12 20,24 0,0 0" />
+                    </svg>
+                    <div class="[--text-shadow-color:theme(colors.dark-cyan)] text-shadow-3xl">Explore</div>
+                    <svg width="24" height="24" class="m-2 fill-white stroke-white stroke-1">
+                        <polygon points="0 0,12 20,24 0,0 0" />
+                    </svg>
+                </a>
+            </div>
+            <script>
+                // fade scroll indicator on scroll
+                const scrollIndicator = document.getElementById('scroll-indicator');
+                window.addEventListener('scroll', () => {
+                    const scrollProp = (window.scrollY / window.innerHeight);
+
+                    scrollIndicator.childNodes.forEach((child) => {
+                        if (child.nodeType === Node.ELEMENT_NODE) {
+                            child.style.opacity = 1 - scrollProp;
+                        }
+
+                        child.childNodes.forEach((svg) => {
+                            if (svg.nodeType === Node.ELEMENT_NODE) {
+                                svg.style.opacity = 1 - scrollProp;
+                            }
+                        });
+                    });
+                });
+
+                // reset the blink animation each time it finishes, becasuse CSS won't delay between iterations
+                // initial animationend is on the slide-in-up
+                scrollIndicator.addEventListener('animationend', () => {
+                    scrollIndicator.classList.remove('animate-[blink_2s_10s]');
+                    setTimeout(() => {
+                        scrollIndicator.classList.add('animate-[blink_2s_10s]');
+                    }, 100);
+                });
+
+                // cancel blink animation on scroll
+                window.addEventListener('scroll', () => scrollIndicator.classList.remove('animate-[blink_2s_10s]'));
+            </script>
         </div>
     </div>
-    <div class="mt-24"></div>
-    <img src="/assets/images/hardware-pi-thin.jpeg" />
 
-    <!-- services -->
-    <div class="mt-24"></div>
-    <div class="mx-[40px] md:mx-[50px] md:grid grid-cols-2 grid-row-2">
-        <h2 class="col-start-1 row-start-1 text-right text-3xl text-black max-w-full md:max-w-[90%]">
-            Deep Expertise meets Rapid Integration
-        </h2>
-        <h2 class="col-start-2 row-start-1 text-lg md:text-xl text-black w-fit font-mono mt-8 md:mt-0">
-            We excel at delivering exceptional solutions as a cohesive team, or swiftly integrating into existing ones. With deep expertise and an unmatched ability to <span class="text-accent">quickly learn and adapt</span>, we ensure impactful results tailored to your needs.
-        </h2>
-        <div class="col-start-2 row-start-2 flex mt-8">
-            <a href="/services" class="px-5 py-2 bg-black rounded-sm">
-                <h2 class="text-xl text-white hover:text-accent ease-in-out duration-300">About our work</h2>
-            </a>
-        </div>
-    </div>
-    <div class="mt-24"></div>
-    <img src="/assets/images/ac37-umpiring.jpg" />
+    {% include_relative /_content/about.html %}
 
-    <!-- ventures -->
-    <div class="mt-24"></div>
-    <h2 class="mx-[40px] md:mx-[50px] text-3xl text-black max-w-[90%]">
-        Empowering your <span class="text-accent">vision</span>.
-    </h2>
-    <div class="mt-8 px-[20%]">
-        <h2 class="text-lg md:text-xl text-black w-fit font-mono">
-            {{ site.data.texts.index.ventures.body }}
-        </h2>
-        <div class="flex mt-8">
-            <a href="/ventures" class="px-5 py-2 bg-black rounded-sm">
-                <h2 class="text-xl text-white hover:text-accent ease-in-out duration-300">Explore partnerships</h2>
-            </a>
-        </div>
-    </div>
-    <!-- TODO: different image -->
-    <div class="mt-24"></div>
-    <img src="/assets/images/stock-sea-half.jpg" />
+    {% include_relative /_content/services.html %}
+
+    {% include_relative /_content/work.html %}
+
+    {% include_relative /_content/ventures.html %}
 </main>

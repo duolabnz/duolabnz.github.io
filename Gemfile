@@ -4,9 +4,10 @@ gem "jekyll", "~> 4"
 gem "webrick", "~> 1.7"
 gem "logger"
 
+gem "jekyll-postcss"
+
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
-  gem "jekyll-postcss"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

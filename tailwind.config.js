@@ -9,34 +9,23 @@ module.exports = {
     extend: {
       // https://cruip.com/creating-a-sliding-text-animation-with-tailwind-css/
       animation: {
-        // @keyframes | duration | easing-function | delay | iteration-count | direction | fill-mode | play-state | name
-        'text-slide-up-2': 'text-slide-up-2 5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
-        'text-slide-up-3': 'text-slide-up-3 7.5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
-        'text-slide-up-4': 'text-slide-up-4 10s cubic-bezier(0.83, 0, 0.17, 1) infinite',
-        'text-slide-up-5': 'text-slide-up-5 12.5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
-        'text-slide-up-6': 'text-slide-up-6 15s cubic-bezier(0.83, 0, 0.17, 1) infinite',
-        'text-slide-up-7': 'text-slide-up-7 17.5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
-        'text-slide-up-8': 'text-slide-up-8 20s cubic-bezier(0.83, 0, 0.17, 1) infinite',
+        'text-slide-2': 'text-slide-2 5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
+        'text-slide-3': 'text-slide-3 7.5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
+        'text-slide-4': 'text-slide-4 10s cubic-bezier(0.83, 0, 0.17, 1) infinite',
+        'text-slide-5': 'text-slide-5 12.5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
+        'text-slide-6': 'text-slide-6 15s cubic-bezier(0.83, 0, 0.17, 1) infinite',
+        'text-slide-7': 'text-slide-7 17.5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
+        'text-slide-8': 'text-slide-8 20s cubic-bezier(0.83, 0, 0.17, 1) infinite',
 
-        'wipe-in-from-left-100': 'wipe-in-from-left 0.7s ease-out 0.1s forwards',
-        'wipe-in-from-left-200': 'wipe-in-from-left 0.7s ease-out 0.2s forwards',
-        'wipe-in-from-left-300': 'wipe-in-from-left 0.7s ease-out 0.3s forwards',
-        'wipe-in-from-left-500': 'wipe-in-from-left 0.7s ease-out 0.5s forwards',
-        'wipe-in-from-left-700': 'wipe-in-from-left 0.7s ease-out 0.7s forwards',
-        'wipe-in-from-left-1000': 'wipe-in-from-left 0.7s ease-out 1s forwards',
-        'wipe-in-from-left-1200': 'wipe-in-from-left 0.7s ease-out 1.2s forwards',
-        'wipe-in-from-left-1500': 'wipe-in-from-left 0.7s ease-out 1.5s forwards',
-        'wipe-in-from-left-2000': 'wipe-in-from-left 0.7s ease-out 2s forwards',
+        'blink': 'blink 5s infinite',
+        'blink-in': 'blink 2s forwards',
 
-        'wipe-in-from-bottom-100': 'wipe-in-from-bottom 0.7s ease-out 0.1s forwards',
-        'wipe-in-from-bottom-200': 'wipe-in-from-bottom 0.7s ease-out 0.2s forwards',
-        'wipe-in-from-bottom-300': 'wipe-in-from-bottom 0.7s ease-out 0.3s forwards',
-        'wipe-in-from-bottom-500': 'wipe-in-from-bottom 0.7s ease-out 0.5s forwards',
-        'wipe-in-from-bottom-700': 'wipe-in-from-bottom 0.7s ease-out 0.7s forwards',
-        'wipe-in-from-bottom-1000': 'wipe-in-from-bottom 0.7s ease-out 1s forwards',
-        'wipe-in-from-bottom-1200': 'wipe-in-from-bottom 0.7s ease-out 1.2s forwards',
-        'wipe-in-from-bottom-1500': 'wipe-in-from-bottom 0.7s ease-out 1.5s forwards',
-        'wipe-in-from-bottom-2000': 'wipe-in-from-bottom 0.7s ease-out 2s forwards',
+        'grow-in-left': 'grow-in-left 1s forwards',
+
+        'slide-in-up': 'slide-in-up 1s forwards',
+        'slide-in-down': 'slide-in-down 1s forwards',
+        'slide-in-left': 'slide-in-left 1s forwards',
+        'slide-in-right': 'slide-in-right 1s forwards',
       },
       keyframes: {
         'text-slide-up-2': {
@@ -179,33 +168,75 @@ module.exports = {
             transform: 'translateY(-88.88%)',
           },
         },
-        'wipe-in-from-left': {
-          from: {
-            transform: 'translateX(-100%)',
+
+        'blink': {
+          '0%': {
             opacity: 0,
           },
-          to: {
-            transform: 'translateX(0)',
+          '20%, 30.1%, 60%': {
+            opacity: 0.3,
+          },
+          '20.1%, 30%, 60.5%, 100%': {
             opacity: 1,
-          }
+          },
         },
-        'wipe-in-from-bottom': {
-          from: {
+
+        'grow-in-left': {
+          '0%': {
+            opacity: 0,
+            width: '0%',
+          },
+          '100%': {
+            opacity: 1,
+            width: '100%',
+          },
+        },
+
+        'slide-in-up': {
+          '0%': {
             transform: 'translateY(100%)',
             opacity: 0,
           },
-          to: {
+          '100%': {
             transform: 'translateY(0)',
             opacity: 1,
-          }
-        }
+          },
+        },
+        'slide-in-down': {
+          '0%': {
+            transform: 'translateY(-100%)',
+            opacity: 0,
+          },
+          '100%': {
+            transform: 'translateY(0)',
+            opacity: 1,
+          },
+        },
+        'slide-in-left': {
+          '0%': {
+            transform: 'translateX(-100%)',
+            opacity: 0,
+          },
+          '100%': {
+            transform: 'translateX(0)',
+            opacity: 1,
+          },
+        },
+        'slide-in-right': {
+          '0%': {
+            transform: 'translateX(100%)',
+            opacity: 0,
+          },
+          '100%': {
+            transform: 'translateX(0)',
+            opacity: 1,
+          },
+        },
       },
       colors: {
-        accent: '#3b82f6'
-      },
-      fontFamily: {
-        sans: ['Lexend', 'sans-serif']
-      },
+        'green-cyan': '#59c384',
+        'dark-cyan': '#0f2e5c',
+      }
     }
   },
   variants: {},

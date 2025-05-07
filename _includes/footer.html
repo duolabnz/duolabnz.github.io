@@ -1,0 +1,57 @@
+<footer id="contact" class="mt-24 mb-6 mx-12 overflow-x-hidden">
+    <div class="mt-10 flex flex-row flex-wrap justify-between gap-2">
+        <div class="animate-slide-in-left">
+            <h2 class="pt-5 text-3xl text-white font-bold [--text-shadow-color:theme(colors.dark-cyan)] text-shadow-3xl">
+                Let's DUO.
+            </h2>
+            <div class="flex py-5">
+                <a href="{{site.email}}" class="block group px-2 py-1 bg-gradient-to-r from-white from-50% to-black to-50% bg-[length:200%_100%] bg-right-bottom hover:bg-left-bottom transition-all duration-150">
+                    <h2 class="text-xl bg-transparent text-white group-hover:text-green-cyan transition-colors duration-150">
+                        hello@duolab.nz
+                    </h2>
+                </a>
+            </div>
+        </div>
+
+        <div class="animate-slide-in-right">
+            <h2 class="pt-5 text-3xl text-white font-bold [--text-shadow-color:theme(colors.green-cyan)] text-shadow-xs">
+                Connect with us!
+            </h2>
+            <div class="flex flex-wrap py-5 justify-center">
+                {% if site.x %}
+                <a href="{{site.x}}" target="_blank">
+                    <button
+                        class="bg-white text-black hover:text-green-cyan shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:bg-accent transition-colors"
+                        type="button">
+                        <i class="fab fa-x-twitter"></i>
+                    </button>
+                </a>
+                {% endif %}
+
+                {% if site.linkedin %}
+                <a href="{{site.linkedin}}" target="_blank">
+                    <button
+                        class="bg-white text-black hover:text-green-cyan shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:bg-accent transition-colors"
+                        type="button">
+                        <i class="fab fa-linkedin"></i>
+                    </button>
+                </a>
+                {% endif %}
+
+                {% if site.rss %}
+                <a href="{{site.rss}}" target="_blank">
+                    <button
+                        class="bg-white text-black hover:text-green-cyan shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:bg-accent transition-colors"
+                        type="button">
+                        <i class="fas fa-rss"></i>
+                    </button>
+                </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-row-reverse">
+        <p class="text-xs text-white">© 2025 Duolab LLC.</p>
+    </div>
+</footer>

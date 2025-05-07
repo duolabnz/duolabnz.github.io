@@ -1,0 +1,21 @@
+<div class="sticky bottom-0 left-0 w-fit h-fit text-white text-lg">
+    <div class="hidden sm:block">SM</div>
+    <div class="hidden md:block">MD</div>
+    <div class="hidden lg:block">LG</div>
+    <div class="hidden xl:block">XL</div>
+    <div class="hidden 2xl:block">2XL</div>
+    <div id="size_info" class="block"></div>
+
+    <script>
+        function updateSizeInfo() {
+            let sizeInfo = document.getElementById('size_info');
+            let width = window.innerWidth;
+            let height = window.innerHeight;
+            
+            sizeInfo.innerHTML = `${width}px, ${height}px`;
+        }
+
+        window.addEventListener('resize', updateSizeInfo);
+        window.addEventListener('load', updateSizeInfo);
+    </script>
+</div>

@@ -1,0 +1,63 @@
+<header id="header"
+    class="sticky top-0 z-10 py-4 px-12 bg-black border-white opacity-0 animate-[slide-in-down_0.7s_2.7s_forwards]">
+    <div class="flex flex-row justify-between items-center">
+        <!-- TODO: invert animation left to right -->
+        <a href="/#" class="relative group">
+            <img src="/assets/images/duo.jpeg"
+                class="h-[50px] block transition-all duration-150 group-hover:filter group-hover:invert"
+                alt="Default Image" />
+        </a>
+
+        <div class="flex flex-col lg:hidden">
+            <button type="button" onclick="toggle_menu()">
+                <div id="menu-button"
+                    class="inline-block group px-2 py-1 bg-gradient-to-r from-white from-50% to-black to-50% bg-[length:200%_100%] bg-right-bottom hover:bg-left-bottom [&.open]:bg-left-bottom transition-all duration-150">
+                    <div
+                        class="text-2xl bg-transparent text-white group-hover:text-green-cyan group-[&.open]:text-green-cyan transition-colors duration-150">
+                        MENU
+                    </div>
+                </div>
+            </button>
+
+            <div id="menu" class="hidden flex-col items-end absolute px-12 pb-4 top-16 right-0 bg-black w-fit">
+                {% include nav.html %}
+            </div>
+        </div>
+
+        <div class="justify-between hidden lg:flex flex-row gap-3">
+            {% include nav.html %}
+        </div>
+    </div>
+</header>
+<script>
+    function finish_slide_in() {
+        let header = document.getElementById('header');
+        if (!header) {
+            console.warn("No header found");
+            return;
+        }
+
+        if (header.getAnimations().length < 1) {
+            console.warn("no header animations");
+            return;
+        }
+        
+        let animation = header.getAnimations()[0];
+        if (animation.animationName !== 'slide-in-down') {
+            console.warn("no 'slide-in-down' animation found", animation.animationName);
+            return;
+        }
+
+        animation.playbackRate = 3.5;
+    }
+
+    if (window.location.pathname !== '/') {
+        finish_slide_in();
+    }
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 0) {
+            finish_slide_in();
+        }
+    });
+</script>

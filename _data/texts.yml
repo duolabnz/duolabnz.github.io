@@ -1,12 +1,12 @@
 index:
   headline: Your Applied Technology Partner.
+  # headline: Blurring the lines between hardware and software.
 
   about:
     body: At DUO, we pursue highly complex tasks, finding passion in delivering innovative solutions in the most difficult of situations.
 
   services:
-    body:
-      Focusing on the collaboration of function and form, our solutions are both stunning and intuitively functional.
+    body: Focusing on the collaboration of function and form, our solutions are both stunning and intuitively functional.
 
   ventures:
     header: Empowering your vision.
@@ -15,53 +15,61 @@ index:
 about:
   team:
     james:
-      James comes from a genetics background but with a passion found for software he swiftly pivoted into the tech industry and hasn't contemplated going after almost 20 years!<br/>
-      His broad experience ranges from fintech startups in NYC to embedded systems and iOS development for global fitness brands. Having spent time in roles from junior engineer all the way to CTO, he truely understands tech startups.<br/>
-      Outside of the office, you'll usually find James on his mountain bike with his kids. (P.S his UI/UX designs are next-level)
-    
-    tom: 
-      Tom has a Bachelors in Computer Science, and is always dreaming up ways to integrate technology into nature.<br/>
-      Finding a niche between technology, sailing, and live TV broadcasts, so far he's had the privilege to be part of;<br/>
-      - custom hardware/software solutions for Olympic sailors,<br/>
-      - behind-the-scenes software for live TV broadcasts,<br/>
-      - software solutions for industry-leading audio equipment providers,<br/>
-      - native 3D applications for adjudicating world-class sailing events<br/>
-      When he's not writing software, you can find Tom out in the surf, hiking around the South Island, or backpacking the continents with his partner.
-      
+      If it's beautiful, functional, and innovative - it was probably James' idea. 
+      With a background in genetics, he quickly pivoted into the tech industry and hasn't looked back since. 
+      His broad experience ranges from fintech startups in NYC to embedded systems and iOS development for fitness companies, so he's sure to fit well into any situation.
+      <br/>If you can't find James in the office, he's probably out on his mountain bike with the kids or snapping pics of the southern night sky.
+    tom:
+      Our 3D wizard and infrastructure guru. With a knack for picking up new technologies in a flash, he truely shines in any environment.
+      Tom's experience ranges from behind-the-scenes development for prestigious television broadcasts to native 3D applications for adjudicating sailing events.
+      <br/>When he's not creating exceptional software you can find him out in the surf, hiking South Island mountains, or pottering in the garden with his partner.
   chat: Whether you need technology developed or just want to chat (mmmm coffee...), feel free to reach out!
+  philosophy:
+    agility:
+      In the ever-changing landscape of the modern world, we firmly believe the ability to <span class="underline">quickly adapt and
+      learn</span> in all environments - novel or familiar - is the key to successful partnerships. With agility as our cornerstone, 
+      we ensure efficient progress measured in days, not months.
+    knowledge:
+      We believe decisions are the accumulation of information and experience.
+      Striving to <span class="underline">deeply understand any environment</span> we operate in, we ensure all decisions we make
+      truely are the best available.
+    connection:
+      When it comes to collaboration, we've found the best results come from cohesive teams who <span class="underline">understand each other</span>.
+      Focusing on building and maintaining strong relationships with our partners, we ensure all parties are satisfied every step of the way.
 
 services:
   headline: Diverse Services,<br/>Extensive Experience.
   software:
     short: Delivering intuitively functional, and scalable solutions catered to your needs.
-    long: Whether you need modern web development, native 3D tooling, high-performance distributed data services, custom hardware and sensor integration, embedded firmware, autonomous vessels, ... you get the point, we've got you covered.
-
-    ac37:
-      tags:
-        - Exceptional communication
-        - Precise project management
-        - Distributed data streaming
-        - 3D visualisation tools
-        - Modern Web development
-        - Custom hardware solutions
-        - Embedded Firmware
-        - Sensor integration
-        - Hybrid-Cloud Infrastructure
-        - IP Networking
-        - Five nines availability
-      
-      video_summary: See Chief Umpire (CHUMP) Richard Slater on the impact our solutions had on their workflows
+    long: Whether you need modern web development, native 3D tooling, high-performance distributed data services, embedded firmware, autonomous vessels, ... you get the point, we've got you covered.
 
   hardware:
-    short: Custom hardware and electronics platforms, sensor characterisation and integration, composite and additive manufacturing design and fabrication. 
+    short: Custom hardware and electronics platforms, sensor characterisation and integration, composite and additive manufacturing design and fabrication.
     long: Every project is unique, and when it comes to hardware - we understand bespoke. From custom PCBs to composites, we've got your design, fabrication, and integration sorted.
   project_delivery:
     short: Ensure timely, high quality project execution, from concept to delivery.
     long: Combining our interdisciplinary skills with precision, we ensure rapid delivery of high-quality solutions every time - guarenteed.
 
+  onboarder:
+    We quickly acclimate to your environment and processes, ensuring seamless collaboration.
+    Our approachable and adaptable team integrates smoothly and quickly with yours, building trust and rapport.
+    Dedicated to excellence, we deliver solutions tailored to your needs with agility and skill.
+  part_time_full_timer:
+    Embedded within your team, but without the commitment of a full-time hire.
+    Leveraging our flexibility and learning capabilities, we adapt to your evolving requirements.
+    Delivering impactful features at a fraction of the cost, we celebrate shared successes together.
+  architect:
+    With deep expertise and experience, we guide strategic decisions to kickstart your vision.
+    Our collaborative approach fosters strong partnerships with your team for effective results.
+    Committed to delivering excellent solutions, we seamlessly and efficiently build the foundations of your success.
+  partner:
+    Providing targeted expertise in exchange for an ownership stake to advance your vision.
+    Leveraging our depth of knowledge, we foster collaboration and innovation to achieve shared goals.
+
 ventures:
-  # pitch: Got a fantastic idea but can't find the right people or funds to execute?<br/>Our ventures program offers flexible partnership models designed to help entrepreneurs transform their vision into reality.
-  pitch: Helping transform your vision into reality.
+  pitch:
+    Got a fantastic idea but can't find the right people or funds to execute?<br/>
+    Our ventures program offers flexible partnership models designed to help entrepreneurs transform their vision into reality.
   partnership_models:
     Through shared equity arrangements, we provide comprehensive technical expertise and resources in exchange for ownership stakes tailored to your unique situation.<br/>
     Beyond traditional equity structures, we offer hybrid approaches combining milestone-based equity vesting, performance-linked investment terms, and/or staged capital deployment models.<br/>

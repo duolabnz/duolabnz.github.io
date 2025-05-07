@@ -1,0 +1,69 @@
+---
+---
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+    font-family: 'Lexend', 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background: theme('colors.dark-cyan');
+    color: white;
+}
+
+.text-shadow-none {
+    text-shadow: none
+}
+
+.text-shadow-xs {
+    text-shadow: 0 0 10px var(--text-shadow-color, white);
+}
+
+.text-shadow-sm {
+    text-shadow: 0 0 10px var(--text-shadow-color, white), 
+                 0 0 20px var(--text-shadow-color, white);
+}
+
+.text-shadow-md {
+    text-shadow: 0 0 10px var(--text-shadow-color, white), 
+                 0 0 20px var(--text-shadow-color, white), 
+                 0 0 30px var(--text-shadow-color, white);
+}
+
+.text-shadow-lg {
+    text-shadow: 0 0 10px var(--text-shadow-color, white), 
+                 0 0 20px var(--text-shadow-color, white), 
+                 0 0 30px var(--text-shadow-color, white), 
+                 0 0 40px var(--text-shadow-color, white);
+}
+
+.text-shadow-xl {
+    text-shadow: 0 0 10px var(--text-shadow-color, white), 
+                 0 0 20px var(--text-shadow-color, white), 
+                 0 0 30px var(--text-shadow-color, white), 
+                 0 0 40px var(--text-shadow-color, white), 
+                 0 0 50px var(--text-shadow-color, white);
+}
+
+.text-shadow-2xl {
+    text-shadow: 0 0 10px var(--text-shadow-color, white), 
+                 0 0 20px var(--text-shadow-color, white), 
+                 0 0 30px var(--text-shadow-color, white), 
+                 0 0 40px var(--text-shadow-color, white), 
+                 0 0 50px var(--text-shadow-color, white), 
+                 0 0 60px var(--text-shadow-color, white);
+}
+
+.text-shadow-3xl {
+    text-shadow: 0 0 10px var(--text-shadow-color, white), 
+                 0 0 20px var(--text-shadow-color, white), 
+                 0 0 30px var(--text-shadow-color, white), 
+                 0 0 40px var(--text-shadow-color, white), 
+                 0 0 50px var(--text-shadow-color, white), 
+                 0 0 60px var(--text-shadow-color, white), 
+                 0 0 70px var(--text-shadow-color, white);
+}

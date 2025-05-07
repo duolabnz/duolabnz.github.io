@@ -1,19 +1,21 @@
-// close menu on interact outside of menu
-window.addEventListener('mouseup', function (e) {
-  let menu = document.querySelector('.menu');
-  let hamburger = document.querySelector('.hamburger');
+// on click or touch outside of menu (when menu is open) close the menu
+function on_interact(e) {
+  let menu = document.getElementById('menu');
+  let menu_button = document.getElementById('menu-button');
 
-  if (menu.classList.contains('active') && !menu.contains(e.target) && !hamburger.contains(e.target)) {
+  if (menu?.classList.contains('flex') && !menu.contains(e.target) && !menu_button?.contains(e.target)) {
     toggle_menu();
   }
-});
+}
+window.addEventListener('mouseup', on_interact);
+window.addEventListener('touchstart', on_interact);
 
 // // change opacity of items relative to scroll
 // function lerp(a1, a2, b1, b2, a) {
 //   if (a1 == a2) {
 //     return (b1 + b2) / 2;
 //   }
-  
+
 //   return (b1 + (a - a1) * (b2 - b1) / (a2 - a1));
 // }
 
@@ -25,7 +27,7 @@ window.addEventListener('mouseup', function (e) {
 //   // let elements = document.querySelectorAll(".text-dynamic-opacity");
 //   let elements = document.querySelectorAll("*");
 //   let screenHeight = window.innerHeight;
-  
+
 //   let at_bottom = isScrolledToBottom();
 
 //   elements.forEach(element => {
@@ -71,11 +73,13 @@ function toggle_active(element) {
 }
 
 function toggle_menu() {
-  let hamburger = document.querySelector('.hamburger');
-  let menu = document.querySelector('.menu');
+  let menu = document.getElementById('menu');
 
-  toggle_active(hamburger);
-  toggle_active(menu);
+  menu?.classList.toggle('hidden');
+  menu?.classList.toggle('flex');
+
+  let menu_button = document.getElementById('menu-button');
+  menu_button?.classList.toggle('open');
 }
 
 function play_video(container) {
@@ -131,4 +135,15 @@ function hide_indicator(container) {
   }
 
   indicator.classList.add('hidden');
+}
+
+function toggle_accordian(element) {
+  element.classList.toggle('open');
+
+  let accordians = document.querySelectorAll('.accordian');
+  accordians.forEach((accordian) => {
+    if (accordian !== element) {
+      accordian.classList.remove('open');
+    }
+  });
 }
